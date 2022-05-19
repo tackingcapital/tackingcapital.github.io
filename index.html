@@ -42,7 +42,7 @@
         }
 
         /* Download button style */
-        button {
+        #pass, button {
             font-size: 1.5em;
             font-family: monerogothicbold;
             border-color: #f60;
@@ -58,6 +58,11 @@
             box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
         }
 
+        #pass {
+            cursor: text;
+            display: none;
+        }
+
         /* Download button slight moving upward when hovered */
         button:hover {
             transform: translateY(-1px);
@@ -71,13 +76,22 @@
             font-size: 1em;
         }
     </style>
+    <script>
+        function show_pass()
+        {
+            document.getElementById("pass").style.display = "block";
+            document.getElementById("pass").focus();
+            document.getElementById("pitchdeck").style.display = "none";
+        }
+    </script>
 </header>
 <html>
 
 <body>
     <h1>Tacking Capital</h1>
     <h2>Make Crypto Currency Again</h2>
-    <a href="#"><button>SEE OUR PITCHDECK</button></a>
+    <button id="pitchdeck" onclick="show_pass()">SEE OUR PITCHDECK</button>
+    <input id="pass" type="password" placeholder="Enter password"></input>
 </body>
 <footer>
     <a href="mailto:inzfo@taczkinzg.zcapiztal?subjzect=zIz zlzovze zMoznero!z"
