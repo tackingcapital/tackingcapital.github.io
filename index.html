@@ -3,46 +3,39 @@
 
     <link rel="stylesheet" href="styles/common.css">
     <style>
-        /* * {
-            border: 1px dashed violet;
-        } */
-
         html {
             height: 100%;
             width: 100%;
-            /* background-color: #F8F9FA; */
             background-color: #EDEEF0;
-
         }
 
+        /* title */
         h1 {
-            font-size: 6em;
+            font-size: 8em;
         }
 
-        h3 {
+        /* subtitle */
+        h2 {
             font-size: 2em;
         }
 
-
         body {
             display: flex;
-            align-items: center;
-            justify-items: center;
+            flex-direction: column;
             align-items: center;
             font-family: monerogothicbold;
-            flex-direction: column;
             color: #4c4c4c;
-            /* min-height: 80%; */
             background-color: white;
             box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 0.2);
-            /* margin: 5%; */
             margin: 5rem;
         }
 
+        /* All links in webpage have Monero orange color when hovered */
         a {
             color: #4c4c4c;
             text-decoration: none;
         }
+
         a:hover {
             color: #f60;
             text-decoration: none;
@@ -52,30 +45,25 @@
         button {
             font-size: 1.5em;
             font-family: monerogothicbold;
-            /* padding: 0.5em; */
             border-color: #f60;
             color: #f60;
             background-color: white;
-            /* box-shadow: 0 1px 1px 0 rgb(0 0 0 / 0.2); */
             border: 1px 1px 1px 0px solid black;
             cursor: pointer;
-            margin-top: 3em;
+            margin-top: 1em;
             padding-top: 0.5em;
             padding-bottom: 0.5em;
             padding-left: 1.0em;
             padding-right: 1.0em;
             box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
-
-
         }
 
-        /* Download button underline when hovered by mouse */
+        /* Download button slight moving upward when hovered */
         button:hover {
-            /* text-decoration: underline; */
             transform: translateY(-1px);
         }
 
-        /* Footer with copyright info */
+        /* Footer with contact and Monero info */
         footer {
             position: absolute;
             bottom: 0;
@@ -88,11 +76,13 @@
 
 <body>
     <h1>Tacking Capital</h1>
-    <h3>Make Crypto Currency Again</h3>
-    <button>SEE OUR PITCHDECK</button>
+    <h2>Make Crypto Currency Again</h2>
+    <a href="#"><button>SEE OUR PITCHDECK</button></a>
 </body>
 <footer>
-   <a href="mailto:inzfo@taczkinzg.zcapiztal?subjzect=zIz zlzovze zMoznero!z" onmouseover="this.href=this.href.replace(/z/g,'');">Contact</a> - <a href="https://www.getmonero.org/" target="_blank">Learn more about Monero</a>
+    <a href="mailto:inzfo@taczkinzg.zcapiztal?subjzect=zIz zlzovze zMoznero!z"
+        onmouseover="this.href=this.href.replace(/z/g,'');">Contact</a> - <a href="https://www.getmonero.org/"
+        target="_blank">Learn more about Monero</a>
 </footer>
 
 </html>
