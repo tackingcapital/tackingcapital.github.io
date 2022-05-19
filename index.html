@@ -42,7 +42,8 @@
         }
 
         /* Download button style */
-        #pass, button {
+        #pass,
+        button {
             font-size: 1.5em;
             font-family: monerogothicbold;
             border-color: #f60;
@@ -77,12 +78,49 @@
         }
     </style>
     <script>
-        function show_pass()
-        {
+
+        // Call this to show pass input field
+        function show_pass() {
             document.getElementById("pass").style.display = "block";
             document.getElementById("pass").focus();
             document.getElementById("pitchdeck").style.display = "none";
         }
+
+        window.onload = (event) => {
+            console.log('page is fully loaded');
+
+            // Register event that pressing return submits password
+            var input = document.getElementById("pass");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    console.log('pressed return');
+                    pass_submit();
+                }
+            });
+
+            // Call this when pass input is submitted
+            function pass_submit() {
+                const pass_input = document.getElementById("pass");
+                console.log(pass_input);
+                if (pass_input.value == "password") {
+                    console.log("pass ok");
+                    pass_input.style.backgroundColor = "#ffffff";
+                    window.location.replace("./deck.html");
+
+                }
+                else {
+                    console.error("pass not okay!");
+                    pass_input.style.backgroundColor = "#ffeeee";
+                    // pass_input.style.border = "2px solid #ff0000";
+                    pass_input.value = "";
+                }
+            }
+
+        };
+
+
+
     </script>
 </header>
 <html>
@@ -91,7 +129,7 @@
     <h1>Tacking Capital</h1>
     <h2>Make Crypto Currency Again</h2>
     <button id="pitchdeck" onclick="show_pass()">SEE OUR PITCHDECK</button>
-    <input id="pass" type="password" placeholder="Enter password"></input>
+    <input name="pass" id="pass" type="password" placeholder="Enter password"></input>
 </body>
 <footer>
     <a href="mailto:inzfo@taczkinzg.zcapiztal?subjzect=zIz zlzovze zMoznero!z"
