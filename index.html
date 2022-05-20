@@ -3,20 +3,19 @@
 
     <link rel="stylesheet" href="styles/common.css">
     <style>
+        
         html {
-            height: 100%;
-            width: 100%;
             background-color: #EDEEF0;
         }
 
         /* title */
         h1 {
-            font-size: 8em;
+            font-size: 8vw;
         }
 
         /* subtitle */
         h2 {
-            font-size: 2em;
+            font-size: 2.5vw;
         }
 
         body {
@@ -27,8 +26,20 @@
             color: #4c4c4c;
             background-color: white;
             box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 0.2);
-            margin: 5rem;
+            
         }
+
+                    @media (orientation: landscape) {
+            body {
+                margin: 5rem;
+            }
+            }
+
+            @media (orientation: portrait) {
+            body {
+                margin: 2rem;
+            }
+            }
 
         /* All links in webpage have Monero orange color when hovered */
         a {
@@ -44,7 +55,7 @@
         /* Download button style */
         #pass,
         button {
-            font-size: 1.5em;
+            font-size: 2vw;
             font-family: monerogothicbold;
             border-color: #f60;
             color: #f60;
@@ -74,7 +85,7 @@
             position: absolute;
             bottom: 0;
             color: gray;
-            font-size: 1em;
+            font-size: 1.25vw;
         }
     </style>
     <script>
