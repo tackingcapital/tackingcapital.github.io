@@ -1,21 +1,78 @@
 <header>
     <title>Tacking Capital</title>
 
-    <link rel="stylesheet" href="styles/arrow.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/deck.css">
+    <style>
+        html {
+            background-color: #EDEEF0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: monerogothicbold;
+            color: #4c4c4c;
+            /* background-color: white; */
+            /* box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 0.2); */
+
+        }
+
+        .title {
+            font-size: 5rem;
+            
+        }
+
+        /* @media (orientation: landscape) {
+            body {
+                margin: 5rem;
+            }
+        }
+
+        @media (orientation: portrait) {
+            body {
+                margin: 2rem;
+            }
+        } */
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: #4c4c4c;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        a:hover {
+            color: #f60;
+            text-decoration: none;
+        }
+    </style>
 </header>
 <html>
 
 <body>
-    <div class="deck">
-        <div class="page">
-            <h1>Tacking Capital</h1>
-            <h3>Make Crypto Currency Again</h3>
-            <center>
-                <div class="arrow bounce"></div>
-            </center>
-            <!-- {if printing deck, add big QR code to digital version} -->
+    <div class="card">
+        <div class="title">
+            Tacking Capital
         </div>
+        <div class="navbar">
+            <a href="#philosophy">Our philosophy</a>
+            <a href="#mission">Mission</a>
+            <a href="#link">Who are we?</a>
+            <a href="#team">Team</a>
+            <a href="#advisors">Advisors</a>
+            <a href="#invest">What do invest in?</a>
+            <a href="#monero">Monero</a>
+            <a href="#whynow">Why now?</a>
+        </div>
+    </div>
+    <div class="deck">
         <div class="page">
             “Tacking is a sailing maneuver by which a sailing vessel, whose desired course is into the wind, turns
             its bow toward and through the wind, allowing progress in the desired direction.
@@ -52,9 +109,6 @@
             capital and decentralized finance and privacy tech firms with over a century of combined global and regional
             experience.
         </div>
-        </table>
 </body>
-<footer>
-    Copyright©
-</footer>
+
 </html>
