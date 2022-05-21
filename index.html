@@ -26,6 +26,7 @@
             color: #4c4c4c;
             background-color: white;
             box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 0.2);
+            border-radius: 2vmin  ;
             
         }
 
@@ -52,23 +53,7 @@
             text-decoration: none;
         }
 
-        /* Download button style */
-        #pass,
-        button {
-            font-size: 2vw;
-            font-family: monerogothicbold;
-            border-color: #f60;
-            color: #f60;
-            background-color: white;
-            border: 1px 1px 1px 0px solid black;
-            cursor: pointer;
-            margin-top: 1em;
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
-            padding-left: 1.0em;
-            padding-right: 1.0em;
-            box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
-        }
+       
 
         #pass {
             cursor: text;
@@ -86,6 +71,17 @@
             bottom: 0;
             color: gray;
             font-size: 1.25vw;
+        }
+
+        blockquote {
+            max-width: 40%;
+            font-style: italic;
+            /* text-align: justify; */
+            text-align: center;
+            margin: 0;
+            /* justify-content: center; */
+            line-height: 1.6;
+            text-justify: inter-word;
         }
     </style>
     <script>
@@ -117,7 +113,7 @@
                 if (pass_input.value == "password") {
                     console.log("pass ok");
                     pass_input.style.backgroundColor = "#ffffff";
-                    window.location.replace("./deck.html");
+                    window.location.replace("./intro.html");
 
                 }
                 else {
@@ -138,8 +134,10 @@
 
 <body>
     <h1>Tacking Capital</h1>
-    <h2>Make Crypto Currency Again</h2>
-    <button id="pitchdeck" onclick="show_pass()">SEE OUR PITCHDECK</button>
+    <blockquote>Tacking is a sailing maneuver by which a vessel can move directly upwind, making this an essential maneuver of a sailing ship.
+        
+    </blockquote>
+    <button id="pitchdeck" onclick="show_pass()">SEE OUR PITCHDECKS</button>
     <input name="pass" id="pass" type="password" placeholder="Enter password"></input>
 </body>
 <footer>
