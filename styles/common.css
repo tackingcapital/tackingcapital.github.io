@@ -42,8 +42,16 @@ html {
 
 }
 
+.navbar {
+    align-items: center;
+}
+
+li {
+    margin: 1rem;
+}
+
 p {
-    padding: 0;
+    padding: 1rem;
     margin: 0;
 }
 
@@ -53,16 +61,22 @@ small {
 
 h1 {
     /* display: block; */
-    font-size: 5em;
-}
-
-h2 {
-    display: block;
+    padding: 0;
+    margin: 0;
     font-size: 4em;
 }
 
+h2 {
+    padding: 0;
+    margin: 2rem;
+    /* display: block; */
+    font-size: 3em;
+}
+
 h3 {
-    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    /* display: block; */
     font-size: 2em;
 }
 
@@ -74,9 +88,9 @@ body {
     padding: 0;
 
     /* layout */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 
     /* color */
     background-color: #F8F9FA;
@@ -91,7 +105,8 @@ body {
 
     /* size */
     width: 100%;
-    height: 100%;
+
+    /* height: 100%; */
     margin: 0;
     padding: 0;
 
@@ -99,29 +114,28 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
-
-
 
 
 
 .page {
 
     /* size */
-    width: 80vw;
-    /* width: 90vw; */
+    width: 80%;    
+    /* height: 100%;    */
 
-        /* height: 20vh; */
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    padding: 4rem;
 
-    font-size: 1.5em;
-    /* margin: 5vmin; */
-    /* padding: 5%; */
+    font-size: 1.25em;
 
-    margin-top: 5vh; 
-    margin-bottom: 5vh;
-    padding: 5vw;  
-  
-    /* padding: 2rem;  */
+    /* margin-top: 2vh;  */
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    /* padding: 5vw;   */
 
     /* layout */
     flex-direction: column;
@@ -134,17 +148,58 @@ body {
     color: #4c4c4c;
     background-color: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    border-radius: 1rem;
 }
+
+
+
+.bottom-margin {
+    margin-bottom: 5vh;
+}
+
+
+
+
+.page-full {
+    /* size */
+    /* width: 70vw;
+    height: 70vh; */
+
+    width: 100%;
+    margin: 5vh;
+    height: 100%;
+
+    font-size: 1.25em;
+
+   
+
+    /* layout */
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+
+    /* colors */
+    color: #4c4c4c;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    border-radius: 1rem;
+}
+
 
 blockquote {
     max-width: 80%;
     font-style: italic;
     /* text-align: justify; */
     text-align: center;
-    margin: 0;
+    /* margin: 0; */
     /* justify-content: center; */
     line-height: 1.6;
     text-justify: inter-word;
+    margin: 2em;
 }
 
 .triangle_down1 {
@@ -185,6 +240,17 @@ blockquote {
 
 .subtitle {
     margin: 1em;
+}
+
+footer {
+    margin: 1em;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -230,6 +296,15 @@ a:hover {
     text-decoration: none;
 }
 
+.center-vertically-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 /* links in the webpage */
 a {
