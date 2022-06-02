@@ -320,3 +320,52 @@ a:hover {
     color: #f60;
     text-decoration: none;
 }
+
+.team {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.team .member {
+    text-align: center;
+    border:rgb(0 0 0 / 0.2);
+
+    color: #4c4c4c;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    border-radius: 0.5rem;
+    margin: 0.5em;
+
+    width: 25%;
+
+    cursor: pointer;
+
+}
+
+.team .member .name {
+    padding: 1em;
+    color:#f60;
+    text-decoration: underline;
+    height: 25%;
+}
+
+.team .member img {
+    /* border: 1px solid black; */
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+
+    object-fit: cover;
+    border-radius: 50%;
+    height: 25%;
+    /* height: 100px;
+    width: 100px; */
+    margin: 1em;
+}
+
+/* * { 
+    outline:1px blue solid;
+}  */
