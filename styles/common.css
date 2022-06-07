@@ -330,10 +330,19 @@ a:hover {
     min-width: 0;
     padding: 0;
     margin: 0;
+
+    text-align: center;
+}
+
+
+
+.team .member ul {
+    text-align: left;
+    font-size: small;
 }
 
 .team .member {
-    text-align: center;
+    
     border:rgb(0 0 0 / 0.2);
 
     color: #4c4c4c;
@@ -341,31 +350,75 @@ a:hover {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
     border-radius: 0.5rem;
-    margin: 0.5em;
+    margin: 0.25em;
 
     width: 25%;
 
     cursor: pointer;
+    
+    border: 1px solid white;
+
+
+}
+
+.team .member:hover {
+    
+   
+
+    border: 1px solid #f60;
 
 }
 
 .team .member .name {
     padding: 1em;
-    color:#f60;
-    text-decoration: underline;
-    height: 25%;
+    /* color:#f60; */
+    /* text-decoration: underline; */
+    /* height: 25%; */
+    font-size: 1.4rem;
+}
+
+
+.work-experience {
+    text-align: left;
+    display: flex;
+  justify-content: left;
+}
+
+.work-experience p {
+    display: inline;
+    text-align: left;
+    align-self: left;
+    vertical-align: middle;
+    height: 100%;
+    /* border: 1px solid violet; */
+    /* margin: auto; */
+    padding-left: 0
+}
+
+.company-logo {
+    max-width: 2em;
+    max-height: 2em;
+    margin: 0;
+}
+
+
+.team .member .role {
+   font-size: 0.9em;
 }
 
 .team .member img {
     /* border: 1px solid black; */
     box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    text-align: center;
 
     object-fit: cover;
     border-radius: 50%;
-    height: 25%;
+    /* height: 25%; */
     /* height: 100px;
     width: 100px; */
     margin: 1em;
+    width: 6em;
+    height: 6em;
 }
 
 /* * { 
