@@ -406,7 +406,7 @@ a:hover {
    font-size: 0.9em;
 }
 
-.team .member img {
+.team .member .photo {
     /* border: 1px solid black; */
     box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
     text-align: center;
@@ -421,6 +421,22 @@ a:hover {
     height: 6em;
 }
 
+.team .member .company-logo {
+    /* border: 1px solid black; */
+    /* box-shadow: 0 3px 5px rgb(0 0 0 / 0.2); */
+    /* text-align: center; */
+
+    object-fit: contain;
+    /* border-radius: 15%; */
+    /* height: 25%; */
+    /* height: 100px;
+    width: 100px; */
+    margin: auto;
+    margin-right: 1em;
+    margin-left: 0;
+    width: 10em;
+    height: 10em;
+}
 /* * { 
     outline:1px blue solid;
 }  */
