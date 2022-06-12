@@ -7,10 +7,78 @@ a {
     color: #f60;
 }
 
+
 .deck {
     display: flex;
     flex-direction: column;
 }
+
+.job {
+    display: flex;
+    flex-direction: row;
+}
+
+.job .company-logo {
+    object-fit: contain;
+}
+
+.work-experience {
+    display: inline;
+    text-align: left;
+    align-self: left;
+    vertical-align: middle;
+    height: 100%;
+    /* border: 1px solid violet; */
+    /* margin: auto; */
+    padding-left: 0
+}
+
+.team {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+}
+
+.team .member {
+
+    border: rgb(0 0 0 / 0.2);
+
+    color: #4c4c4c;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    border-radius: 0.5rem;
+
+    width: 25%;
+
+    cursor: pointer;
+
+    border: 1px solid white;
+}
+
+.team .member:hover {
+
+
+
+    border: 1px solid #f60;
+
+}
+
+.team .member .photo {
+    /* border: 1px solid black; */
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    text-align: center;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
 
 .same-size-items {
     display: flex;
@@ -189,6 +257,35 @@ blockquote {
         font-size: 70px
     }
 
+    .team {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .team .member {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .team .member .work-experience .job {
+        
+    }
+
+    .team .member .photo {
+        width: 300px;
+        margin-bottom: 20px;
+
+        width: 6em;
+        height: 6em;
+    }
+
+    .team .member .job .company-logo {
+        width: 50px;
+        margin-right: 20px;
+    }
+
 }
 
 /* Large devices settings */
@@ -236,5 +333,34 @@ blockquote {
 
     blockquote {
         font-size: 20px;
+    }
+
+    .team .member .work-experience {
+        margin-top: 200px;
+    }
+
+    .team .member {
+        margin: 10px;
+    }
+
+    .team .member .job .company-logo {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .team .member .job {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    
+    .team .member .role {
+        font-size: 15px;
+    }
+
+    .team .member .photo {
+            margin: 50px;
+            width: 150px;
+            height: 150px;
     }
 }
