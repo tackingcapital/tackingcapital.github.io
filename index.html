@@ -3,103 +3,10 @@
     <title>Tacking Capital</title>
 
     <link rel="stylesheet" href="styles/common.css">
-    <style>
-        /* title
-        h1 {
-            font-size: 8vw;
-        }
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 
-        /* subtitle */
-        /* h2 {
-            font-size: 2.5vw;
-        }  */
-
-        /* body {
-     
-            border-radius: 2vmin;
-
-        } */
-
-        /* @media (orientation: landscape) {
-            body {
-                margin: 5rem;
-            }
-        }
-
-        @media (orientation: portrait) {
-            body {
-                margin: 2rem;
-            }
-        } */
-
-        /* All links in webpage have Monero orange color when hovered */
-
-
-
-        #pass {
-            cursor: text;
-            display: none;
-        }
-
-        /* Download button slight moving upward when hovered */
-        button:hover {
-            transform: translateY(-1px);
-        }
-
-        /* Footer with contact and Monero info */
-        footer {
-            position: absolute;
-            bottom: 0;
-            color: gray;
-            font-size: 1.25vw;
-        }
-    </style>
-    <script>
-
-        // Call this to show pass input field
-        function show_pass() {
-            document.getElementById("pass").style.display = "block";
-            document.getElementById("pass").focus();
-            document.getElementById("pitchdeck").style.display = "none";
-        }
-
-        window.onload = (event) => {
-            console.log('page is fully loaded');
-
-            // Register event that pressing return submits password
-            var input = document.getElementById("pass");
-            input.addEventListener("keyup", function (event) {
-                if (event.keyCode === 13) {
-                    event.preventDefault();
-                    console.log('pressed return');
-                    pass_submit();
-                }
-            });
-
-            // Call this when pass input is submitted
-            function pass_submit() {
-                const pass_input = document.getElementById("pass");
-                console.log(pass_input);
-                if (pass_input.value == "password") {
-                    console.log("pass ok");
-                    pass_input.style.backgroundColor = "#ffffff";
-                    document.location.href = "./intro.html";
-                }
-                else {
-                    console.error("pass not okay!");
-                    pass_input.style.backgroundColor = "#ffeeee";
-                    // pass_input.style.border = "2px solid #ff0000";
-                    pass_input.value = "";
-                }
-            }
-
-        };
-
-
-
-    </script>
 </header>
-
 
 <body>
     <div class="center-vertically-wrapper">
@@ -114,8 +21,7 @@
     </div>
 </body>
 <footer>
-    <a href="mailto:inzfo@taczkinzg.zcapiztalz"
-        onmouseover="this.href=this.href.replace(/z/g,'');">Contact</a>
+    <a href="mailto:inzfo@taczkinzg.zcapiztalz" onmouseover="this.href=this.href.replace(/z/g,'');">Contact</a>
 </footer>
 
 </html>
