@@ -2,142 +2,54 @@
     border: 1px dashed violet;
 } */
 
-/* Enable site-wide grid */
-* {
-    box-sizing: border-box;
+/* Default values no matter screen size */
+a {
+    color: #f60;
 }
 
-/* Grid system */
-.col {
-    float: left;
-    /* padding: 15px; */
-    padding: 5px;
+.deck {
+    display: flex;
+    flex-direction: column;
+}
+
+.same-size-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.same-size-items * {
+    flex: 1 1 0px;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
+    color: #4c4c4c;
+    font-family: monerogothicbold;
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-/* Default values and very small devices settings */
-.row {width: 90%;}
-.s1 {width: 8.33%;}
-.s2 {width: 16.66%;}
-.s3 {width: 25%;}
-.s4 {width: 33.33%;}
-.s5 {width: 41.66%;}
-.s6 {width: 50%;}
-.s7 {width: 58.33%;}
-.s8 {width: 66.66%;}
-.s9 {width: 75%;}
-.s10 {width: 83.33%;}
-.s11 {width: 91.66%;}
-.s12 {width: 100%;}
-
-a {
-    /* color: #4c4c4c; */
-    color: #f60;
-    /* text-decoration: none; */
-}
-
-h1 {
-    font-size: 38px;
-    margin: auto;
-    /* padding: 0; */
-    margin-bottom: 5px;
-}
-
-button {
-    font-size: 30px;
-    margin: auto;
-    padding: 0;
-}
-input {
-    font-size: 20px;
-}
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    /* background-color: red; */
-    color: white;
-    text-align: center;
-    font-size: 20px;
 }
 
-
-
-/* Medium devices settings, like a Google Pixel 6 Pro */
-@media only screen and (min-width: 600px) {
-    .row {width: 85%;}
-    .m1 {width: 8.33%;}
-    .m2 {width: 16.66%;}
-    .m3 {width: 25%;}
-    .m4 {width: 33.33%;}
-    .m5 {width: 41.66%;}
-    .m6 {width: 50%;}
-    .m7 {width: 58.33%;}
-    .m8 {width: 66.66%;}
-    .m9 {width: 75%;}
-    .m10 {width: 83.33%;}
-    .m11 {width: 91.66%;}
-    .m12 {width: 100%;}
-    h1 {
-        font-size: 85px;
-        margin: 10px;
-    }
-    button {
-        font-size: 70px;
-        margin: 30px;
-    }
-    input {
-        font-size: 50px;
-        margin: 30px;
-    }
-    footer {
-        font-size: 50px;
-    }
-    
-}
-
-/* Large devices settings */
-@media only screen and (min-width: 992px) {
-    .row {width: 70%;}
-    .l1 {width: 8.33%;}
-    .l2 {width: 16.66%;}
-    .l3 {width: 25%;}
-    .l4 {width: 33.33%;}
-    .l5 {width: 41.66%;}
-    .l6 {width: 50%;}
-    .l7 {width: 58.33%;}
-    .l8 {width: 66.66%;}
-    .l9 {width: 75%;}
-    .l10 {width: 83.33%;}
-    .l11 {width: 91.66%;}
-    .l12 {width: 100%;}
-    h1 {font-size: 60px;}
-    button {
-        font-size: 40px;
-    }
-    input {font-size: 30px;}
-    footer {
-        font-size: 20px;    
-    }
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+/* Buttons slightly moving upward when hovered */
+button:hover {
+    transform: translateY(-1px);
 }
 
 /* Load Monero font */
@@ -149,38 +61,17 @@ footer {
     font-style: normal;
 }
 
-
-body {
-
-    /* size */
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-
-    /* color */
-    background-color: #F8F9FA;
-
-    /* text */
-    color: #4c4c4c;
+input,
+button {
     font-family: monerogothicbold;
-
-    overflow-x: hidden;
-    margin: 0px;
-    position: relative;
-    min-height: 100%;
-    height: auto;
+    border-color: #f60;
+    color: #f60;
+    background-color: white;
+    border: 1px 1px 1px 0px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
+    border-radius: 2vmin;
 }
-
-.card {
-        /* colors */
-        color: #4c4c4c;
-        background-color: white;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    
-        border-radius: 1rem;
-}
-
 
 .center-vertically-wrapper {
     position: fixed;
@@ -190,47 +81,160 @@ body {
     width: 100%;
 }
 
-
-
-
-
-/* links in the webpage */
-
-/* 
-a:hover {
-    color: #f60;
-    text-decoration: none;
-} */
-
-
-/* Buttons and input fields */
-input,
-button {
-    /* font-size: 2vw; */
-    font-family: monerogothicbold;
-    border-color: #f60;
-    color: #f60;
+.card {
+    color: #4c4c4c;
     background-color: white;
-    border: 1px 1px 1px 0px solid black;
-    cursor: pointer;
-    /* margin-top: 1em; */
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: white;
+    border-top: rgb(0 0 0 / 0.2) 1px solid;
+}
+
+
+/* quotes have left black bar and monospace */
+blockquote {
+    border-left: 0.25em solid #4c4c4c;
+    text-align: left;
     padding-left: 1.0em;
-    padding-right: 1.0em;
-    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
-    border-radius: 2vmin;
+    /* text-align: justify; */
+    text-justify: inter-word;
+    font-weight: lighter;
+    font-family: monospace;
+    font-style: normal;
+
 }
 
-/* Buttons slightly moving upward when hovered */
-button:hover {
-    transform: translateY(-1px);
+/* ************************************************** */
+/* Small devices settings, like very small smartphones  */
+/* ************************************************** */
+@media only screen and (max-width: 599px) {
+
+    
+
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
+
+
+/* ************************************************** */
+/* Medium devices settings, like a Google Pixel 6 Pro */
+/* ************************************************** */
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+
+    h1 {
+        font-size: 85px;
+        margin: 10px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    small {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 70px;
+        padding: 30px;
+        margin: 30px;
+    }
+
+    input {
+        font-size: 70px;
+        /* margin: 30px; */
+    }
+
+    footer {
+        font-size: 50px;
+    }
+
+    .card {
+        padding: 50px;
+
+        font-size: 45px;
+        margin-bottom: 35px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+        /*
+        font-size: xx-large;
+        margin: auto;
+        margin-bottom: 50px; */
+    }
+
+    button {
+        font-size: 70px;
+    }
+
+    blockquote {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 70px
+    }
+
+}
+
+/* Large devices settings */
+@media only screen and (min-width: 992px) {
+
+    .deck {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    button {
+        font-size: 25px;
+        padding: 25px;
+    }
+
+    input {
+        font-size: 50px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    .row .col.offset-l2 {
+        margin-left: 16.6666666667%;
+    }
+
+    .card {
+        font-size: 25px;
+        /* margin: 200px;  */
+        /* padding: 70px; */
+        /* margin: 40px; */
+        /* width: 80%; */
+        margin-bottom: 40px;
+        padding: 70px;
+
+    }
+
+    small {
+        font-size: 15px;
+    }
+
+    blockquote {
+        font-size: 20px;
+    }
 }
