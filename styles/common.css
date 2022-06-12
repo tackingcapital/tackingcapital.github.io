@@ -2,16 +2,156 @@
     border: 1px dashed violet;
 } */
 
-/* Website fills entire page */
-html {
-    /* size */
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+/* Enable site-wide grid */
+* {
+    box-sizing: border-box;
 }
 
+/* Grid system */
+.col {
+    float: left;
+    /* padding: 15px; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Default values and very small devices settings */
+.row {width: 90%;}
+.s1 {width: 8.33%;}
+.s2 {width: 16.66%;}
+.s3 {width: 25%;}
+.s4 {width: 33.33%;}
+.s5 {width: 41.66%;}
+.s6 {width: 50%;}
+.s7 {width: 58.33%;}
+.s8 {width: 66.66%;}
+.s9 {width: 75%;}
+.s10 {width: 83.33%;}
+.s11 {width: 91.66%;}
+.s12 {width: 100%;}
+
+a {
+    /* color: #4c4c4c; */
+    color: #f60;
+    /* text-decoration: none; */
+}
+
+h1 {
+    font-size: 38px;
+    margin: auto;
+    /* padding: 0; */
+    margin-bottom: 5px;
+}
+
+button {
+    font-size: 30px;
+    margin: auto;
+    padding: 0;
+}
+input {
+    font-size: 20px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* Medium devices settings, like a Google Pixel 6 Pro */
+@media only screen and (min-width: 600px) {
+    .row {width: 85%;}
+    .m1 {width: 8.33%;}
+    .m2 {width: 16.66%;}
+    .m3 {width: 25%;}
+    .m4 {width: 33.33%;}
+    .m5 {width: 41.66%;}
+    .m6 {width: 50%;}
+    .m7 {width: 58.33%;}
+    .m8 {width: 66.66%;}
+    .m9 {width: 75%;}
+    .m10 {width: 83.33%;}
+    .m11 {width: 91.66%;}
+    .m12 {width: 100%;}
+    h1 {
+        font-size: 85px;
+        margin: 10px;
+    }
+    button {
+        font-size: 70px;
+        margin: 30px;
+    }
+    input {
+        font-size: 50px;
+        margin: 30px;
+    }
+    footer {
+        font-size: 50px;
+    }
+    
+}
+
+/* Large devices settings */
+@media only screen and (min-width: 992px) {
+    .row {width: 70%;}
+    .l1 {width: 8.33%;}
+    .l2 {width: 16.66%;}
+    .l3 {width: 25%;}
+    .l4 {width: 33.33%;}
+    .l5 {width: 41.66%;}
+    .l6 {width: 50%;}
+    .l7 {width: 58.33%;}
+    .l8 {width: 66.66%;}
+    .l9 {width: 75%;}
+    .l10 {width: 83.33%;}
+    .l11 {width: 91.66%;}
+    .l12 {width: 100%;}
+    h1 {font-size: 60px;}
+    button {
+        font-size: 40px;
+    }
+    input {font-size: 30px;}
+    footer {
+        font-size: 20px;    
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Load Monero font */
+@font-face {
+    font-family: 'monerogothicbold';
+    src: url('fonts/monerogothic_v3-webfont.woff2') format('woff2'),
+        url('fonts/monerogothic_v3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
+
     /* size */
     width: 100%;
     height: 100%;
@@ -24,29 +164,56 @@ body {
     /* text */
     color: #4c4c4c;
     font-family: monerogothicbold;
+
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: auto;
+}
+
+.card {
+        /* colors */
+        color: #4c4c4c;
+        background-color: white;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+        border-radius: 1rem;
 }
 
 
-/* Load Monero font */
-@font-face {
-    font-family: 'monerogothicbold';
-    src: url('fonts/monerogothic_v3-webfont.woff2') format('woff2'),
-        url('fonts/monerogothic_v3-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.center-vertically-wrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
+
+
+
+
+
+/* links in the webpage */
+
+/* 
+a:hover {
+    color: #f60;
+    text-decoration: none;
+} */
+
 
 /* Buttons and input fields */
 input,
 button {
-    font-size: 2vw;
+    /* font-size: 2vw; */
     font-family: monerogothicbold;
     border-color: #f60;
     color: #f60;
     background-color: white;
     border: 1px 1px 1px 0px solid black;
     cursor: pointer;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 1.0em;
@@ -60,398 +227,10 @@ button:hover {
     transform: translateY(-1px);
 }
 
-.navbar {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-li {
-    margin: 1rem;
-}
-
-p {
-    padding: 1rem;
-    margin: 0;
-}
-
-small {
-    font-size: 1rem;
-}
-
-h1 {
-    /* display: block; */
-    padding: 0;
-    margin: 0;
-    font-size: 4em;
-}
-
-h2 {
-    padding: 0;
-    margin: 2rem;
-    /* display: block; */
-    font-size: 3em;
-}
-
-h3 {
-    padding: 1rem;
-    margin: 1rem;
-    /* display: block; */
-    font-size: 2em;
-}
-
-
-
-.deck {
-
-    /* size */
-    width: 100%;
-
-    /* height: 100%; */
-    margin: 0;
-    padding: 0;
-
-    /* layout */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.card {
-
-    /* size */
-    width: 80%;
-    /* height: 100%;    */
-
-    /* margin-left: 5vw;
-    margin-right: 5vw; */
-    padding: 4rem;
-
-    font-size: 1.25em;
-
-    /* margin-top: 2vh;  */
-    margin-bottom: 4vh;
-    margin-top: 4vh;
-    /* padding: 5vw;   */
-
-    /* layout */
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    align-items: center;
-
-    /* colors */
-    color: #4c4c4c;
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-    border-radius: 1rem;
-}
-
-
-
-.bottom-margin {
-    margin-bottom: 5vh;
-}
-
-
-
-
-.page-full {
-    /* size */
-    /* width: 70vw;
-    height: 70vh; */
-
-    width: 100%;
-    margin: 5vh;
-    height: 100%;
-
-    font-size: 1.25em;
-
-
-
-    /* layout */
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    align-items: center;
-
-    /* colors */
-    color: #4c4c4c;
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-    border-radius: 1rem;
-}
-
-
-blockquote {
-    max-width: 80%;
-    font-style: italic;
-    /* text-align: justify; */
-    text-align: center;
-    /* margin: 0; */
-    /* justify-content: center; */
-    line-height: 1.6;
-    text-justify: inter-word;
-    margin: 2em;
-}
-
-.triangle_down1 {
+html {
     position: relative;
-    top: -50px;
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-right: 0.2em solid black;
-    border-top: 0.2em solid black;
-    transform: rotate(135deg);
-    margin-right: 0.5em;
-    margin-left: 1.0em;
-    margin-top: auto;
-
-}
-
-/* html {
-    background-color: #EDEEF0;
-} */
-
-/* body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: monerogothicbold;
-    color: #4c4c4c;
-    /* background-color: white; */
-/* box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 0.2); */
-
-
-
-.title {
-    font-size: 5rem;
-
-}
-
-.subtitle {
-    margin: 1em;
-}
-
-footer {
-    margin: 1em;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Footer with contact and Monero info */
-footer {
-    position: absolute;
-    bottom: 0;
-    color: gray;
-    font-size: 1.25vw;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 0.2);
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-/* .sticky+.content {
-    padding-top: 1em;
-} */
-
-/* @media (orientation: landscape) {
-    body {
-        margin: 5rem;
-    }
-}
-
-@media (orientation: portrait) {
-    body {
-        margin: 2rem;
-    }
-} */
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: white;
-}
-
-.navbar a {
-    color: #4c4c4c;
-    text-decoration: none;
-    padding: 1rem;
-}
-
-a:hover {
-    color: #f60;
-    text-decoration: none;
-}
-
-.center-vertically-wrapper {
-    width: 100%;
+    min-height: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-/* links in the webpage */
-a {
-    color: #4c4c4c;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #f60;
-    text-decoration: none;
-}
-
-.team {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: row;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-
-    text-align: center;
-}
-
-
-
-.team .member ul {
-    text-align: left;
-    font-size: small;
-}
-
-.team .member {
-
-    border: rgb(0 0 0 / 0.2);
-
-    color: #4c4c4c;
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-    border-radius: 0.5rem;
-    margin: 0.25em;
-
-    width: 25%;
-
-    cursor: pointer;
-
-    border: 1px solid white;
-
-
-}
-
-.team .member:hover {
-
-
-
-    border: 1px solid #f60;
-
-}
-
-.team .member .name {
-    padding: 1em;
-    /* color:#f60; */
-    /* text-decoration: underline; */
-    /* height: 25%; */
-    font-size: 1.4rem;
-}
-
-
-.work-experience {
-    text-align: left;
-    display: flex;
-    justify-content: left;
-}
-
-.work-experience p {
-    display: inline;
-    text-align: left;
-    align-self: left;
-    vertical-align: middle;
-    height: 100%;
-    /* border: 1px solid violet; */
-    /* margin: auto; */
-    padding-left: 0
-}
-
-.company-logo {
-    max-width: 2em;
-    max-height: 2em;
-    margin: 0;
-}
-
-
-.team .member .role {
-    font-size: 0.9em;
-}
-
-.team .member .photo {
-    /* border: 1px solid black; */
-    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
-    text-align: center;
-
-    object-fit: cover;
-    border-radius: 50%;
-    /* height: 25%; */
-    /* height: 100px;
-    width: 100px; */
-    margin: 1em;
-    width: 6em;
-    height: 6em;
-}
-
-.team .member .company-logo {
-    /* border: 1px solid black; */
-    /* box-shadow: 0 3px 5px rgb(0 0 0 / 0.2); */
-    /* text-align: center; */
-
-    object-fit: contain;
-    /* border-radius: 15%; */
-    /* height: 25%; */
-    /* height: 100px;
-    width: 100px; */
-    margin: auto;
-    margin-right: 1em;
-    margin-left: 0;
-    width: 10em;
-    height: 10em;
-}
-
-/* quotes have left black bar and monospace */
-blockquote {
-    border-left: 0.25em solid #4c4c4c;
-    text-align: left;
-    padding-left: 1.5em;
-    text-align: justify;
-    text-justify: inter-word;
-    font-weight: lighter;
-    font-family: monospace;
-    font-style: normal;
-
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
