@@ -264,27 +264,31 @@ blockquote {
 
 
     .team .member {
+        margin: 10px;
         width: 100%;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .team .member .work-experience .job {
-        
-    }
-
-    .team .member .photo {
-        width: 300px;
-        margin-bottom: 20px;
-
-        width: 6em;
-        height: 6em;
     }
 
     .team .member .job .company-logo {
-        width: 50px;
-        margin-right: 20px;
+        width: 105px;
+        margin-right: 10px;
     }
+
+    .team .member .job {
+        padding: 10px;
+        font-size: 40px;
+    }
+
+    
+    .team .member .role {
+        font-size: 15px;
+    }
+
+    .team .member .photo {
+            margin: 50px;
+            width: 300px;
+            height: 300px;
+    }
+
 
 }
 
@@ -335,9 +339,6 @@ blockquote {
         font-size: 20px;
     }
 
-    .team .member .work-experience {
-        margin-top: 200px;
-    }
 
     .team .member {
         margin: 10px;
