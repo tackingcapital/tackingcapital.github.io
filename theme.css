@@ -195,3 +195,8 @@ blockquote {
     font-style: normal;
 
 }
+
+.company-logo {
+    object-fit: contain;
+    width: 3em;
+}
