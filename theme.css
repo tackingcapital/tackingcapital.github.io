@@ -123,10 +123,6 @@ body {
     width: 100%;
 }
 
-/* Buttons slightly moving upward when hovered */
-button:hover {
-    transform: translateY(-1px);
-}
 
 /* Load Monero font */
 @font-face {
@@ -148,6 +144,17 @@ input,
     box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
     border-radius: 2vmin;
 }
+
+
+/* Buttons slightly moving upward when hovered */
+.btn:hover, .btn:active , .btn:visited {
+    transform: translateY(-1px);
+    border-color: #f60;
+    background-color: #f60;
+    color: white;
+}
+
+
 
 .center-vertically-wrapper {
     position: fixed;
