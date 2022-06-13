@@ -1,12 +1,11 @@
-/* * {
-    border: 1px dashed violet;
-} */
+/* 
+Tacking Capital Bootstrap Theme
+*/
 
-/* Default values no matter screen size */
+
 a {
     color: #f60;
 }
-
 
 .deck {
     display: flex;
