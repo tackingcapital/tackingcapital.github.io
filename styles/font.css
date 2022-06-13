@@ -1,0 +1,198 @@
+/* * {
+    border: 1px dashed violet;
+} */
+
+/* Default values no matter screen size */
+a {
+    color: #f60;
+}
+
+
+.deck {
+    display: flex;
+    flex-direction: column;
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+}
+
+.job .company-logo {
+    object-fit: contain;
+}
+
+.work-experience {
+    display: inline;
+    text-align: left;
+    align-self: left;
+    vertical-align: middle;
+    height: 100%;
+    /* border: 1px solid violet; */
+    /* margin: auto; */
+    padding-left: 0
+}
+
+.team {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    flex-wrap: wrap;
+}
+
+.team .member {
+
+    border: rgb(0 0 0 / 0.2);
+
+    color: #4c4c4c;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    border-radius: 0.5rem;
+
+   
+
+    cursor: pointer;
+
+    border: 1px solid white;
+
+
+}
+
+.no-padding {
+    padding: 0%;
+    margin: 0%;
+}
+
+.team .member:hover {
+
+
+
+    border: 1px solid #f60;
+
+}
+
+.team .member .photo {
+    /* border: 1px solid black; */
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    text-align: center;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+
+.same-size-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.same-size-items * {
+    flex: 1 1 0px;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
+    color: #4c4c4c;
+    font-family: monerogothicbold;
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Buttons slightly moving upward when hovered */
+button:hover {
+    transform: translateY(-1px);
+}
+
+/* Load Monero font */
+@font-face {
+    font-family: 'monerogothicbold';
+    src: url('fonts/monerogothic_v3-webfont.woff2') format('woff2'),
+        url('fonts/monerogothic_v3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input,
+.btn {
+    font-family: monerogothicbold;
+    border-color: #f60;
+    color: #f60;
+    background-color: white;
+    border: 1px 1px 1px 0px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
+    border-radius: 2vmin;
+}
+
+.center-vertically-wrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.card {
+    color: #4c4c4c;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    padding: 1em;
+    /* width: 100%; */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: white;
+    border-top: rgb(0 0 0 / 0.2) 1px solid;
+}
+
+
+/* quotes have left black bar and monospace */
+blockquote {
+    border-left: 0.25em solid #4c4c4c;
+    text-align: left;
+    padding-left: 1.0em;
+    /* text-align: justify; */
+    text-justify: inter-word;
+    font-weight: lighter;
+    font-family: monospace;
+    font-style: normal;
+
+}
