@@ -1,38 +1,531 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Tacking Capital - Intro</title>
 
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/deck.css">
-    <script src="nav.js"></script>
-</header>
-<html>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="theme.css">
+</head>
 
 <body>
-    <div class="card">
-        <div class="title">
-            Tacking Capital
-        </div>
-        <div class="subtitle">
-            Make Crypto Currency Again
-        </div>
-        <div id="navbar-padding">
+    <div class="container">
 
-        </div>
-        <div id="navbar" class="navbar">
-            <a href="#philosophy">Our philosophy</a>
-            <a href="#mission">Mission</a>
-            <a href="#whoarewe">Who are we?</a>
-            <a href="#team">Team</a>
-            <a href="#advisors">Advisors</a>
-            <a href="#invest">What do invest in?</a>
-            <a href="#monero">Monero</a>
-            <a href="#whynow">Why now?</a>
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tacking Capital</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#philosophy">Philosophy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mission">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#invest">What do we invest in?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whoarewe">Who are we?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#legal">Legal</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                        <!-- <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="card-deck  pt-5">
+            <div class="card mt-5">
+
+               
+                <div class="card-body">
+                    <h1 class="card-title text-center">
+                        Monero Adoption Fund
+                    </h1>
+                </div>
+            </div>
+            <div class="card ">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h2 id="philosophy" class="card-title  text-center">Philosophy</h2>
+                    <p class="card-text"> Tacking Capital’s Monero Adoption Fund exists to help facilitate adoption and value growth of the privacy-enhanced cryptocurrency Monero as a means of transaction and build a broad, open and privacy-focused Monero ecosystem. 
+                    </p>
+                </div>
+            </div>
+            <div id="mission" class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h2 class="card-title text-center">Mission</h2>
+                    <p class="card-text"> To provide industry-leading rates of return for our investors; by
+                        <ul>
+
+                        <li>
+                       Investing into the Monero privacy-enhanced cryptocurrency while
+                    </li>
+                    <li>
+                       Facilitating Monero adoption as a transaction medium through investment and
+                    </li>
+                    <li>
+                       Investing in businesses essential to creating and strengthening the Monero ecosystem financially and technologically.    
+                    </li>        
+                    </ul>            
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+
+
+           
+            <div class="card">
+                <div class="card-body">
+                    <h2 id="whoarewe" class="card-title text-center">Who are our advisors?</h2>
+                    <p class="card-text">
+                        We are a small, dedicated team of young, experienced, motivated, liberty-oriented, interdisciplinary professionals with a no-bullshit, to-the-point attitude. 
+                        Tacking Capital is advised by several established industry experts from the cryptocurrency industry, venture capital, decentralized finance and privacy tech firms with over a century of combined global and regional experience. 
+                        
+                        <div id=team class="card-group m-5">
+                            <div class="card m-1">
+                                <img class="card-img-top rounded" src="images/generic_avatar.webp">
+                                <div class="card-body">
+            
+                                    <h3 class="card-title text-center">Aleksa<br>Burmazović
+                                    </h3>
+                                    <!-- <h6 class="card-subtitle text-muted text-center">Co-founder</h6> -->
+                                    <p class="card-text">
+                                    <table class="table small">
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>Akston Group</h5>
+                                                <h6>Independent Cryptocurrency Investment Advisor</h6>
+                                                <small>Advised an investment fund on asset management in 2017-18 ICO market, with an ROI of 44% in BTC terms. Technical, fundamental analysis of cryptocurrency projects. </small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src="images/startup-societies-foundation.jpeg">
+                                            </td>
+                                            <td>
+                                                <h5>Startup Societies Foundation</h5>
+                                                <h6>Chief Operations Officer</h6>
+                                                <small>Content creation, event organisation, non-profit fundraising, non-profit legal experience, open-source research in the blockchain, charter city and special jurisdiction space.</small>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/adrianople.group.jpg>
+                                            </td>
+                                            <td>
+                                                <h5>Adrianople Group</h5>
+                                                <h6>Project Manager</h6>
+                                               
+
+                                                <small>Creatively devising new intelligence products in the special economic zone space, selling and following up on same products with clients, creating open-source and human-source intelligence reports, managing a 3-person research team.
+                                                </small>
+                                          
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5> Abed Group</h5>
+                                                <h6>Metaverse Special Economic Zone Project Lead</h6>
+                                                <small>
+                                                    Project lead on a gov-tech interoperability platform for special economic zones. Hiring and managing a team, business plan design, demand forecasting, fundraising and general management of a startup incubated in a reg-tech accelerator.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card m-1">
+                                <img class="card-img-top rounded" src="images/generic_avatar.webp">
+                                <div class="card-body">
+            
+                                    <h3 class="card-title text-center">Mac<br>Davis</h3>
+                                    <!-- <h6 class="card-subtitle text-muted text-center">Co-founder</h6> -->
+                                    <p class="card-text">
+                                    <table class="table small">
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>Cryptoniners</h5>
+                                                <h6>Founder & CSO</h6>
+                                                <small>
+                                                    Bitcoin mining and investment firm, spent years developing investor relations.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>Exosphere HQ</h5>
+                                                <h6>Staff Mentor and Curriculum Designer</h6>
+                                                <small>Developed biohacking curriculum at Exosphere disruptive entrepreneurship research and training incubator.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>Minicircle, Inc</h5>
+                                                <h6>Founder & CEO</h6>
+                                                <small>
+                                                    Charter city-based HIV vaccine development and longevity gene therapy research & commercialization.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>Prophase Biostudios</h5>
+                                                <h6>Founder and Chairman                                                </h6>
+                                                <small>
+                                                    501(c)3 nonprofit open-access biotechnology research and entrepreneurship training laboratory with a focus on CRISPR.
+                                                </small>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>Polymicrobial Systems LLC</h5>
+                                                <h6>Founder & CEO</h6>
+                                                <small>
+                                                    Bioprocessing R&D and pharmaceutical IP development in gene therapy vector design, characterization and GMP production at scale.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card m-1">
+                                <img class="card-img-top img-fluid rounded" src="images/generic_avatar.webp">
+                                <div class="card-body">
+            
+                                    <h3 class="card-title text-center">Andrej<br>Škraba</h3>
+                                    <!-- <h6 class="card-subtitle text-muted text-center">Co-founder</h6> -->
+                                    <p class="card-text">
+                                        <!-- <div class="table-responsive"> -->
+                                    <table class="table small">
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>NiceHash </h5>
+                                                <h6> Chief Marketing Officer                                                </h6>
+                                                <small>
+                                                    Responsible for executing the global marketing strategy of a leading platform for cryptocurrency mining and trading with over 1.5 million users worldwide.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                 <h5> Paralink Network</h5>
+                                                <h6> Chief Marketing Officer                                                </h6>
+                                                <small>
+                                                    Involved in raising a private investment round, successful IDO on Polkastarter, token DEX/CEX listings and marketing engagement at the multichain oracle platform for DeFi and other blockchain applications.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5> NFTfi</h5>
+                                                <h6> Chief Marketing Officer
+                                                </h6>
+                                                <small>
+                                                    Responsible for marketing the leading liquidity protocol for NFTs.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="company-logo" src=images/nologo.png>
+                                            </td>
+                                            <td>
+                                                <h5>EK Water Blocks </h5>
+                                                <h6> Head of Marketing
+                                                </h6>
+                                                <small>
+                                                    Responsible for rapidly growing revenue and direct sales percentage for the premium PC liquid cooling manufacturer through effective marketing strategy.
+                                                </small>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- </div> -->
+                                    </p>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="card">
+                <div class="card-body">
+                    <h2 id="team" class="card-title text-center">Team</h2>
+                     -->
+            
+            <!--</div>
+            </div> -->
+
+
+            <!-- 
+           
+                <div class="member" onclick="window.open('https://yatima1460.me');">
+                    <img src="images/yatima.santamorena.jpg" class="photo">
+                    <div class="name">Yatima Santamorena</div>
+                    <div class="role">Co-founder</div>
+
+                    <div class="work-experience">
+                        <div class="job">
+                            <img class="company-logo" src=images/opera.png>
+                            <div class="job-title">Opera: Build Engineer</div>
+                        </div>
+                        <div class="job">
+                            <img class="company-logo" src=images/ubisoft.png>
+                            <div class="job-title">Ubisoft: C++ developer</div>
+                        </div>
+                        <div class="job">
+                            <img class="company-logo" src=images/zurutech.jpeg>
+                            <div class="job-title">Zuru Tech: Unreal Engine C++ developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="images/kristof.janez.strovs.jpg" class="photo">
+                    <div class="name">Krištof Janez Štrovs</div>
+                    <div class="role">Administrative assistant</div>
+                    <div class="work-experience">
+                        <div class="job">
+                            <img class="company-logo" src=images/>
+                            <div class="company-name"></div>
+                            <div class="job-title"></div>
+                        </div>
+                    </div>
+
+                    <div class="work-experience">
+                        <div class="job">
+                            <img class="company-logo" src=images/institute.libertas.jpg>
+                            <div class="company-name"></div>
+                            <div class="job-title"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+ -->
+
+
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 id="legal" class="card-title text-center">Legal disclaimer</h2>
+                    <p class="card-text small">
+                        This presentation (the “Presentation”) is being furnished on a confidential basis to a limited
+                        number of professional investors (each, a “Recipient”) on a “one-on-one” basis for the purpose
+                        of
+                        providing
+                        certain
+                        information about a potential future hedge fund (Tacking Capital), organized by a team of
+                        experts.
+                        This
+                        Presentation is for informational and discussion purposes only and is not, shall not be
+                        construed
+                        as,
+                        and
+                        does not constitute an offer, invitation or recommendation by Tacking Capital to sell or a
+                        solicitation
+                        to
+                        subscribe for or buy any interest in or assets from Tacking Capital nor shall any securities in
+                        or
+                        assets of
+                        Tacking Capital or any other entity be offered, issued or sold to, any person in any
+                        jurisdiction in
+                        which
+                        such offer, solicitation, purchase or sale would be unlawful under the securities or equivalent
+                        laws
+                        and
+                        regulations of such jurisdiction.
+                        No fund has been yet set up and no securities exist or have been offered for purchase. Persons
+                        in
+                        possession
+                        of this Presentation are required by Tacking Capital to inform themselves about any restrictions
+                        and
+                        to
+                        observe any such restrictions. The Tacking Capital team does not accept any liability to any
+                        person
+                        in
+                        relation to the distribution or possession of this Presentation in or from any jurisdiction.
+                        This
+                        Presentation is for the exclusive use of the persons to whom it is addressed and their advisors.
+                        If
+                        the
+                        Recipient has not received this Presentation from the Tacking team (or any entity authorized by
+                        Tacking
+                        Capital as confirmed by Tacking team in writing), the delivery is unauthorized and the Recipient
+                        should
+                        return this Presentation to the Tacking Capital team immediately.
+                        By accepting this Presentation, the Recipient agrees that it will, and will cause its
+                        representatives
+                        and
+                        advisors to use the information only to discuss its potential interest in Tacking Capital and
+                        for no
+                        other
+                        purpose and will not disclose any such information to any other person without the prior written
+                        consent
+                        of
+                        the Tacking Capital team. Any reproduction of this information in whole or in part is prohibited
+                        and
+                        recipients agree to return this Presentation to the Tacking team upon request.
+                        Past and targeted performance are not necessarily indicative of future results. There can be no
+                        assurance
+                        that Tacking team or its fund will achieve comparable results, that targeted returns,
+                        diversification or
+                        asset allocations will be met or that Tacking Capital or its fund will be able to implement its
+                        investment
+                        strategy and investment approach or achieve its investment objectives for its investment
+                        vehicles.
+                        Statements contained in this Presentation are based on current expectations, estimates,
+                        projections,
+                        opinions, and beliefs of the Tacking Capital team. Such statements involve known and unknown
+                        risks,
+                        uncertainties and other factors, and undue reliance should not be placed thereon. Additionally,
+                        this
+                        Presentation contains “targets” or “forward-looking statements”. Actual events or results or the
+                        actual
+                        performance of the Tacking team or its fund may differ materially from those reflected or
+                        contemplated
+                        in
+                        such statements. As a result, potential investors should not rely on such forward-looking
+                        statements,
+                        opinions or beliefs in making investment decisions. No representation or warranty is made as to
+                        the
+                        future
+                        performance or such forward-looking statements, opinions or beliefs. Certain information
+                        contained
+                        herein
+                        (including forward-looking statements, economic and market information and portfolio company
+                        data)
+                        has
+                        been
+                        obtained from published sources and/or prepared by third parties (including portfolio companies)
+                        and
+                        in
+                        certain cases has not been updated through the date hereof. While such sources are believed to
+                        be
+                        reliable,
+                        neither Tacking nor its respective affiliates or employees assume any responsibility for the
+                        accuracy or
+                        completeness of such information. The information set forth herein does not purport to be
+                        complete
+                        and
+                        is
+                        subject to change. This is not a private placement memorandum or any other sort of information
+                        memorandum on
+                        a fund; such documents will be issued separately when the fund is set up.
+                        Tacking Capital and its affiliates (including but not limited to its directors, officers,
+                        employees
+                        and
+                        agents) do not accept any responsibility whatsoever or liability for any direct, indirect or
+                        consequential
+                        loss or damage suffered or incurred by the Recipient or any other person or entity however
+                        caused
+                        (including
+                        but not limited to negligence) in any way in connection with this Presentation. The receipt of
+                        this
+                        Presentation further shall not be taken as constituting the giving of legal, tax, investment or
+                        other
+                        advice
+                        by Tacking Capital to the Recipient nor any other party, nor to constitute such a person a
+                        client or
+                        customer of Tacking Capital.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="deck">
-        <div class="card">
-           
-        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script>
+            // const navLinks = document.querySelectorAll('.nav-item')
+            // const menuToggle = document.getElementById('navbarSupportedContent')
+            // const bsCollapse = new bootstrap.Collapse(menuToggle)
+            // navLinks.forEach((l) => {
+            //     l.addEventListener('click', () => { bsCollapse.toggle() })
+            // });
+            // bsCollapse.collapse();
+    </script>
+
 </body>
+<footer class="footer">
+    <a href="mailto:inzfo@taczkinzg.zcapiztalz" onmouseover="this.href=this.href.replace(/z/g,'');">Contact</a>
+</footer>
 
 </html>
