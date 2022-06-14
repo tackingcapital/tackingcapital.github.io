@@ -215,3 +215,8 @@ blockquote {
     object-fit: contain;
     max-height: 8em;
 }
+
+
+.card-title {
+    margin-bottom: 1em;
+}
