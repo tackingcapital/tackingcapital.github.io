@@ -258,6 +258,27 @@ footer {
 }
 
 
+.hayek {
+
+    background-image: url("images/hayek.jpeg");
+
+
+    /* background-size: ; */
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+  color: white;
+    
+}
+
+
 .navbar {
     border-bottom: 2px solid #4c4c4c;
 }
