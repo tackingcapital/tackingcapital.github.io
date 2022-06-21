@@ -4,7 +4,23 @@ Tacking Capital Bootstrap Theme
 
 
 a {
+    color: #f60
+}
+
+a:hover {
     color: #f60;
+    text-decoration: underline;
+
+}
+
+.nav-link {
+    color: #4c4c4c
+}
+
+.nav-link:hover{
+    color: #f60;
+    text-decoration: underline;
+
 }
 
 .deck {
@@ -169,7 +185,7 @@ input,
 .card {
     color: #4c4c4c;
     background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -186,15 +202,15 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
+    /* color: white;
     text-align: center;
     background-color: white;
-    border-top: rgb(0 0 0 / 0.2) 1px solid;
+    border-top: rgb(0 0 0 / 0.2) 1px solid; */
 }
 
 
 /* quotes have left black bar and monospace */
-blockquote {
+/* blockquote {
     border-left: 0.25em solid #4c4c4c;
     text-align: left;
     padding-left: 1.0em;
@@ -203,7 +219,7 @@ blockquote {
     font-family: monospace;
     font-style: normal;
 
-}
+} */
 
 .company-logo {
     object-fit: contain;
@@ -219,3 +235,29 @@ blockquote {
 /* .card-title {
     margin-bottom: 1em;
 } */
+
+
+.tacking {
+    background-image: url("images/tacking.jpg");
+
+
+    /* background-size: ; */
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+  color: white;
+
+  
+}
+
+
+.navbar {
+    border-bottom: 2px solid #4c4c4c;
+}
