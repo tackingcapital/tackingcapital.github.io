@@ -260,7 +260,7 @@ footer {
 
 .hayek {
 
-    background-image: url("images/hayek.jpeg");
+    background-image: url("images/hayek.webp");
 
 
     /* background-size: ; */
@@ -269,7 +269,7 @@ footer {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
   
