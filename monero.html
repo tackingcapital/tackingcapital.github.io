@@ -16,40 +16,69 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" data-bs-spy="scroll" data-bs-target=".navbar">
 
-        <!-- <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Tacking Capital</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="/">
+                    <img src="images/logogoeshere.png" width="30vmax" class="d-inline-block align-top" alt="">
+                    Tacking Capital
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#philosophy">Philosophy</a>
+                            <a class="nav-link" href="#philosophy">Our philosophy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#mission">Mission</a>
+                            <a class="nav-link" href="#mission">Our mission</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#invest">What do we invest in?</a>
+                            <a class="nav-link" href="#advisors">Who are our advisors?</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                What do we invest in?
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#monero">Monero</a></li>
+                                <li><a class="dropdown-item" href="#monero-adjacent-businesses">Monero-adjacent businesses</a></li>
+                                <li><a class="dropdown-item" href="#prospects">Privacy, trustless, open-source and encryption-focused prospects</a></li>
+                                <li><a class="dropdown-item" href="#fintech">Fintech and decentralized finance</a></li>
+                                <li><a class="dropdown-item" href="#marketplaces">Peer-to-peer markets and digital marketplaces</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#returns">Achieving returns</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#whoarewe">Who are we?</a>
+                            <a class="nav-link" href="#why-now">Why now?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Why us?
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#our-portfolio">We extensively support our portfolio</a></li>
+                                <li><a class="dropdown-item" href="#security">Informational and operational security</a></li>
+                                <li><a class="dropdown-item" href="#principles">Investment principles</a></li>
+                                <li><a class="dropdown-item" href="#compliance">Compliance</a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#legal">Legal</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav> -->
+        </nav>
+
         <div class="card-deck  pt-5">
             <div class="card mt-5">
 
@@ -64,8 +93,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card ">
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+
+            <div class="card" id="philosophy">
                 <div class="card-body w-100">
                     <h2 id="philosophy" class="card-title  text-center">Our philosophy</h2>
                     <p class="card-text">
@@ -75,14 +104,13 @@
                     </p>
                 </div>
             </div>
-            <div id="mission" class="card">
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
+
+            <div class="card" id="mission">
                 <div class="card-body w-100">
                     <h2 class="card-title text-center">Our mission</h2>
                     <p class="card-text">
                         To provide industry-leading rates of return for our investors; by
                     <ul>
-
                         <li>
                             Investing into the Monero privacy-enhanced cryptocurrency while
                         </li>
@@ -95,15 +123,14 @@
                         </li>
                     </ul>
                     </p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
             </div>
 
 
 
-            <div class="card">
+            <div class="card" id="advisors">
                 <div class="card-body">
-                    <h2 id="whoarewe" class="card-title text-center">Who are our advisors?</h2>
+                    <h2 class="card-title text-center">Who are our advisors?</h2>
                     <p class="card-text">
                         Tacking Capital's Monero Adoption Fund is advised by several established industry experts from
                         the cryptocurrency
@@ -334,38 +361,25 @@
                 </div>
             </div>
 
-            <div id="invest" class="card">
+            <div class="card">
                 <div class="card-body">
-                    <!-- <h2 class="card-title text-center"></h2> -->
                     <p class="card-text text-center">
                         More advisors to come!
-
-
-
                     </p>
                 </div>
-
             </div>
 
 
-            <div id="invest" class="card">
+            <div class="card">
                 <div class="card-body">
-                    <!-- <h2 class="card-title text-center"></h2> -->
                     <p class="card-text text-center">
-
                     <div style="margin-bottom: 2em">
                         Interested in becoming an advisor?
-
                     </div>
                     <a href="get-in-touch"><button class="btn w-100">GET IN TOUCH</button></a>
-
                     </p>
                 </div>
-
             </div>
-
-
-
 
             <div id="invest" class="card">
                 <div class="card-body">
@@ -395,7 +409,7 @@
             </div>
 
 
-            <div id="invest" class="card">
+            <div id="monero" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Monero</h2>
                     <p class="card-text">
@@ -437,7 +451,7 @@
                     -->
 
             <!-- </div> -->
-            <h6 class="text-center pt-2">Comparing Monero to other means of payment, stores of value and
+            <h6 id="comparing-monero" class="text-center pt-2">Comparing Monero to other means of payment, stores of value and
                 cryptocurrencies</h6>
             <div class="table-responsive small" style="white-space: nowrap;  vertical-align: middle; background-color: white; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); border: 1px solid white; margin-bottom: 2em">
 
@@ -514,7 +528,7 @@
 
 
 
-            <div id="invest" class="card">
+            <div id="monero-currency" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Monero is <u>the</u> crypto<u>currency</u></h2>
                     <p class="card-text">
@@ -553,7 +567,7 @@
 
             </div>
 
-            <div id="invest" class="card">
+            <div class="card" id="monero-transactions">
                 <div class="card-body">
                     <!-- <h2 class="card-title text-center">Monero Transactions historical chart</h2> -->
                     <p class="card-text">
@@ -565,7 +579,7 @@
 
             </div>
 
-            <div id="invest" class="card">
+            <div id="monero-adjacent-businesses" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Monero-adjacent businesses
                     </h2>
@@ -587,7 +601,7 @@
             </div>
 
 
-            <div id="invest" class="card">
+            <div id="prospects" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center"> Privacy, trustless, open-source and encryption-focused prospects
                     </h2>
@@ -614,7 +628,7 @@
             </div>
 
 
-            <div id="invest" class="card">
+            <div id="fintech" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center"> Fintech and decentralized finance </h2>
                     <p class="card-text">
@@ -641,7 +655,7 @@
 
             </div>
 
-            <div id="invest" class="card">
+            <div id="marketplaces" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Peer-to-peer markets and digital marketplaces
                     </h2>
@@ -668,7 +682,7 @@
 
 
 
-            <div id="invest" class="card">
+            <div id="returns" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Achieving returns
                     </h2>
@@ -690,7 +704,7 @@
             </div>
 
 
-            <div id="invest" class="card">
+            <div id="why-now" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Why now?
                     </h2>
@@ -732,7 +746,7 @@
 
             </div>
 
-            <div id="invest" class="card">
+            <div id="privacy-market" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">North America Data Privacy Software Market Size Projection, 2018-2029 (USD
                         Million)</h2>
@@ -743,7 +757,7 @@
 
             </div>
 
-            <div id="invest" class="card">
+            <div id="public-trust" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Public trust in government near historic lows</h2>
                     <p class="card-text">
@@ -753,13 +767,13 @@
 
             </div>
 
-            <div id="why-us" class="card">
+            <div class="card">
                 <div class="card-body">
                     <h2 class="text-center">Why us?</h2>
                 </div>
             </div>
 
-            <div id="invest" class="card">
+            <div id="our-portfolio" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">We extensively support our portfolio</h2>
                     <p class="card-text">
@@ -797,7 +811,7 @@
             </div>
 
 
-            <div id="invest" class="card">
+            <div id="security" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">We utilize cutting edge informational and operational security
                     </h2>
@@ -820,7 +834,7 @@
             </div>
 
 
-            <div id="invest" class="card">
+            <div id="principles" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Investment principles
                     </h2>
@@ -884,7 +898,7 @@
 
             </div>
 
-            <div id="invest" class="card">
+            <div id="compliance" class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Compliance
                     </h2>
