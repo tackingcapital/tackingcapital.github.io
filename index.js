@@ -25,7 +25,7 @@ window.onload = (event) => {
         if (pass_input.value == "password") {
             console.log("pass ok");
             pass_input.style.backgroundColor = "#ffffff";
-            document.location.href = "./intro.html";
+            document.location.href = "./intro";
         }
         else {
             console.error("pass not okay!");
