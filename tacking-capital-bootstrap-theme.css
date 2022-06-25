@@ -240,32 +240,19 @@ footer {
 .tacking {
     background-image: url("images/tacking.jpg");
 
-
-    /* background-size: ; */
-  /* Set a specific height */
-  min-height: 500px;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
-  
 
   color: white;
-
-  
 }
 
 
 .hayek {
 
     background-image: url("images/hayek.webp");
-
-
-    /* background-size: ; */
-  /* Set a specific height */
-  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -281,4 +268,10 @@ footer {
 
 .navbar {
     border-bottom: 2px solid #4c4c4c;
+}
+
+
+blockquote {
+    font-style: italic;
+    text-shadow: 2px 2px black;
 }
