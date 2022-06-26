@@ -252,7 +252,7 @@ footer .btn:hover,
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: top right;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
 
