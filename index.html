@@ -11,47 +11,37 @@
 
     <title>Tacking Capital</title>
 
-
     <link href="vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="tacking-capital-bootstrap-theme.css">
 
-    <style>
-        #pass {
-            cursor: text;
-            display: none;
-        }
-    </style>
-
-    <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
 
+    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div class="card">
-            <div class="card-body display-1">
-                <div class="card-img-top d-flex align-items-center">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
                     <div>
-                        <img class="img-fluid" src="images/logogoeshere.png" style="width: 20vmin" alt="Card image cap">
+                        <img class="img-fluid" src="images/logogoeshere.png" style="width: 20vmin;margin-right: 1em;" alt="Card image cap">
                     </div>
-                    <p class="col p-2 m-0 display-1">Tacking Capital</p>
+                    <p class="p-2 m-0 display-1">Tacking Capital</p>
                 </div>
             </div>
-            <button class="btn btn-lg w-100" id="pitchdeck" onclick="show_pass()">SEE OUR
-                PITCHDECKS</button>
-            <input class="form-control" name="pass" id="pass" type="password" placeholder="Enter password"></input>
+            <button class="btn btn-lg w-100" id="pitchdeck" onclick="show_pass()">SEE OUR PITCHDECKS</button>
+            <input class="form-control w-100" name="pass" id="pass" style="cursor: text; display: none;" type="password" placeholder="Enter password"></input>
         </div>
-
     </div>
 
-
     <div class="mt-5" />
+
+    <script src="index.js"></script>
     <script src="vendor/jquery-3.6.0.min.js"></script>
     <script src="vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <footer>
-    <a href="get-in-touch"><button class="btn w-100"  style="border-radius: 0;" >GET IN TOUCH</button></a>
+    <a href="get-in-touch"><button class="btn w-100" style="border-radius: 0;">GET IN TOUCH</button></a>
 </footer>
 
 </html>
