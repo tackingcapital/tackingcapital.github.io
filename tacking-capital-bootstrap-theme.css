@@ -26,16 +26,7 @@ a:hover {
 .deck {
     display: flex;
     flex-direction: column;
-}
-
-.job {
-    display: flex;
-    flex-direction: row;
-}
-
-.job .company-logo {
-    object-fit: contain;
-}
+}   
 
 .work-experience {
     display: inline;
