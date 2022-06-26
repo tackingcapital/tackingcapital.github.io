@@ -158,7 +158,7 @@ input,
     border: 1px 1px 1px 0px solid black;
     cursor: pointer;
     box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
-    border-radius: 2vmin;
+    border-radius: 0;
 }
 
 
@@ -185,15 +185,16 @@ input,
 .card {
     color: #4c4c4c;
     background-color: white;
-    box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
-    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+    /* border-radius: 1rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
     padding: 1em;
     border: 1px solid white;
+    border-radius: 0;
     /* width: 100%; */
 }
 
@@ -202,12 +203,21 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    /* color: white;
-    text-align: center;
-    background-color: white;
-    border-top: rgb(0 0 0 / 0.2) 1px solid; */
+    padding: 0;
+    margin: 0;
 }
 
+
+
+footer .btn {
+    border-left:0;border-right:0;border-bottom:0
+}
+
+footer .btn:hover,
+.btn:active,
+.btn:visited {
+    transform: translateY(0);
+}
 
 /* quotes have left black bar and monospace */
 /* blockquote {
@@ -247,6 +257,7 @@ footer {
   background-size: cover;
 
   color: white;
+  margin-top: 75px;
 }
 
 
