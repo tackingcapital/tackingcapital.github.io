@@ -17,16 +17,28 @@ a:hover {
     color: #4c4c4c
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #f60;
     text-decoration: underline;
 
 }
 
+.active {
+    color: #f60 !important;
+    text-decoration: underline;
+
+}
+
+
+.dropdown-item.active{
+    background-color: white !important;
+}
+
+
 .deck {
     display: flex;
     flex-direction: column;
-}   
+}
 
 .work-experience {
     display: inline;
@@ -201,7 +213,9 @@ footer {
 
 
 footer .btn {
-    border-left:0;border-right:0;border-bottom:0
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0
 }
 
 footer .btn:hover,
@@ -241,14 +255,14 @@ footer .btn:hover,
 .tacking {
     background-image: url("images/tacking.jpg");
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  color: white;
-  margin-top: 75px;
+    color: white;
+    margin-top: 75px;
 }
 
 
@@ -256,15 +270,15 @@ footer .btn:hover,
 
     background-image: url("images/hayek.webp");
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  color: white;
-    
+
+    color: white;
+
 }
 
 
@@ -276,4 +290,108 @@ footer .btn:hover,
 blockquote {
     font-style: italic;
     text-shadow: 2px 2px black;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+html {
+    color: white !important;
+    background-color: black !important;
+}
+
+h5, h6 {
+    color: white !important;
+}
+
+small {
+    color: white !important;
+}
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .card {
+        background-color: #4c4c4c;
+        color: white;
+        box-shadow: 0 1px 2px rgb(255 255 255 / 0.2);
+        border: 1px solid #4c4c4c;
+    }
+
+    .table-responsive {
+        background-color: #4c4c4c !important;
+        color: white !important;
+        /* box-shadow: 0 1px 2px rgb(255 255 255 / 0.2);
+        border: 1px solid #4c4c4c; */
+    }
+
+    th {
+        color: white !important;
+    }
+
+    input,
+    .btn {
+        border-color: #f60;
+        color: #f60;
+        background-color: #4c4c4c;
+        border: 1px 1px 1px 0px solid white;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
+        border-radius: 0;
+    }
+
+
+    a {
+        color: #f60
+    }
+    
+    a:hover {
+        color: #f60;
+        text-decoration: underline;
+    
+    }
+
+    .navbar {
+        background-color: #4c4c4c !important;
+        color: white;
+        border-bottom: 2px solid white;
+
+    }
+
+    .navbar-toggler {
+        background-color: white !important;
+    }
+
+    .text-muted {
+        color: lightgrey !important;
+    }
+
+    .navbar-brand {
+        color: white;
+        background-color: #4c4c4c;
+    }
+    
+    .nav-link {
+        color: white;
+        
+    }
+    
+    .nav-link:hover {
+        color: #f60;
+        text-decoration: underline;
+    
+    }
+
+    .modal-content {
+        background-color: black;
+        color: white;
+        border: 1px white solid;
+    }
+
+    .company-logo {
+        background-color: white;
+    }
 }
