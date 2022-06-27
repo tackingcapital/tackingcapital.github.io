@@ -146,8 +146,9 @@ body {
 /* Load Monero font */
 @font-face {
     font-family: 'monerogothicbold';
-    src: url('fonts/monerogothic_v3-webfont.woff2') format('woff2'),
-        url('fonts/monerogothic_v3-webfont.woff') format('woff');
+    src: url('/common/vendor/monerogothic/monerogothic_v3-webfont.woff2') format('woff2'),
+        url('/common/vendor/monerogothic/monerogothic_v3-webfont.woff') format('woff'),
+        url('/common/vendor/monerogothic/MoneroGothic_v3.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -252,18 +253,6 @@ footer .btn:hover,
 } */
 
 
-.tacking {
-    background-image: url("images/tacking.jpg");
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color: white;
-    margin-top: 75px;
-}
 
 
 .hayek {

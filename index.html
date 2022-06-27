@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f60" />
-    <link rel="icon" type="image/x-icon" href="/images/logogoeshere.png">
+    <link rel="icon" type="image/x-icon" href="/common/logogoeshere.png">
     <meta name="description" content="Make Crypto Currency Again">
 
     <title>Tacking Capital</title>
 
-    <link href="vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="tacking-capital-bootstrap-theme.css">
+    <link href="/common/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/common/tacking-capital-bootstrap-theme.css">
 
 </head>
 
@@ -23,7 +23,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                        <img class="img-fluid" src="images/logogoeshere.png" style="width: 20vmin;margin-right: 1em;" alt="Card image cap">
+                        <img class="img-fluid" src="/common/logogoeshere.png" style="width: 20vmin;margin-right: 1em;" alt="Card image cap">
                     </div>
                     <p class="p-2 m-0 display-1">Tacking Capital</p>
                 </div>
@@ -33,13 +33,52 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
-    <script src="vendor/jquery-3.6.0.min.js"></script>
-    <script src="vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Call this to show pass input field
+        function show_pass() {
+            document.getElementById("pass").style.display = "block";
+            document.getElementById("pass").focus();
+            document.getElementById("pitchdeck").style.display = "none";
+        }
+
+        window.onload = (event) => {
+            console.log('page is fully loaded');
+
+            // Register event that pressing return submits password
+            var input = document.getElementById("pass");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    console.log('pressed return');
+                    pass_submit();
+                }
+            });
+
+            // Call this when pass input is submitted
+            function pass_submit() {
+                const pass_input = document.getElementById("pass");
+                console.log(pass_input);
+                if (pass_input.value == "password") {
+                    console.log("pass ok");
+                    pass_input.style.backgroundColor = "#ffffff";
+                    document.location.href = "./intro";
+                }
+                else {
+                    console.error("pass not okay!");
+                    pass_input.style.backgroundColor = "#ffeeee";
+                    // pass_input.style.border = "2px solid #ff0000";
+                    pass_input.value = "";
+                }
+            }
+
+        };
+    </script>
+    <script src="/common/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/common/vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <footer>
-    <a href="get-in-touch"><button class="btn w-100" style="border-radius: 0;">GET IN TOUCH</button></a>
+    <a href="/get-in-touch"><button class="btn w-100" style="border-radius: 0;">GET IN TOUCH</button></a>
 </footer>
 
 </html>
