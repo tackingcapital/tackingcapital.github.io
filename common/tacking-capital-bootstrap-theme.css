@@ -1,0 +1,373 @@
+/* 
+Tacking Capital Bootstrap Theme
+*/
+
+
+a {
+    color: #f60
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: underline;
+
+}
+
+.nav-link {
+    color: #4c4c4c
+}
+
+.nav-link:hover {
+    color: #f60;
+    text-decoration: underline;
+
+}
+
+.active {
+    color: #f60 !important;
+    text-decoration: underline;
+
+}
+
+
+.dropdown-item.active{
+    background-color: white !important;
+}
+
+
+.deck {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-experience {
+    display: inline;
+    text-align: left;
+    align-self: left;
+    vertical-align: middle;
+    height: 100%;
+    /* border: 1px solid violet; */
+    /* margin: auto; */
+    padding-left: 0
+}
+
+.team {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    flex-wrap: wrap;
+}
+
+.team .member {
+
+    border: rgb(0 0 0 / 0.2);
+
+    color: #4c4c4c;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    border-radius: 0.5rem;
+
+
+
+    cursor: pointer;
+
+    border: 1px solid white;
+
+
+}
+
+.no-padding {
+    padding: 0%;
+    margin: 0%;
+}
+
+.team .member:hover {
+
+
+
+    border: 1px solid #f60;
+
+}
+
+.team .member .photo {
+    /* border: 1px solid black; */
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    text-align: center;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+
+.same-size-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.same-size-items * {
+    flex: 1 1 0px;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
+    color: #4c4c4c;
+    font-family: monerogothicbold;
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* Load Monero font */
+@font-face {
+    font-family: 'monerogothicbold';
+    src: url('/common/vendor/monerogothic/monerogothic_v3-webfont.woff2') format('woff2'),
+        url('/common/vendor/monerogothic/monerogothic_v3-webfont.woff') format('woff'),
+        url('/common/vendor/monerogothic/MoneroGothic_v3.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input,
+.btn {
+    font-family: monerogothicbold;
+    border-color: #f60;
+    color: #f60;
+    background-color: white;
+    border: 1px 1px 1px 0px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
+    border-radius: 0;
+}
+
+
+/* Buttons slightly moving upward when hovered */
+.btn:hover,
+.btn:active,
+.btn:visited {
+    transform: translateY(-1px);
+    border-color: #f60;
+    background-color: #f60;
+    color: white;
+}
+
+
+
+.center-vertically-wrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.card {
+    color: #4c4c4c;
+    background-color: white;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+    /* border-radius: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 0;
+    /* width: 100%; */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+footer .btn {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0
+}
+
+footer .btn:hover,
+.btn:active,
+.btn:visited {
+    transform: translateY(0);
+}
+
+/* quotes have left black bar and monospace */
+/* blockquote {
+    border-left: 0.25em solid #4c4c4c;
+    text-align: left;
+    padding-left: 1.0em;
+    text-justify: inter-word;
+    font-weight: lighter;
+    font-family: monospace;
+    font-style: normal;
+
+} */
+
+.company-logo {
+    object-fit: contain;
+    width: 3em;
+}
+
+.img-fit {
+    object-fit: contain;
+    max-height: 8em;
+}
+
+
+/* .card-title {
+    margin-bottom: 1em;
+} */
+
+
+
+
+
+
+
+.navbar {
+    border-bottom: 2px solid #4c4c4c;
+}
+
+
+blockquote {
+    font-style: italic;
+    text-shadow: 2px 2px black;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+html {
+    color: white !important;
+    background-color: black !important;
+}
+
+h5, h6 {
+    color: white !important;
+}
+
+small {
+    color: white !important;
+}
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .card {
+        background-color: #4c4c4c;
+        color: white;
+        box-shadow: 0 1px 2px rgb(255 255 255 / 0.2);
+        border: 1px solid #4c4c4c;
+    }
+
+    .table-responsive {
+        background-color: #4c4c4c !important;
+        color: white !important;
+        /* box-shadow: 0 1px 2px rgb(255 255 255 / 0.2);
+        border: 1px solid #4c4c4c; */
+    }
+
+    th {
+        color: white !important;
+    }
+
+    input,
+    .btn {
+        border-color: #f60;
+        color: #f60;
+        background-color: #4c4c4c;
+        border: 1px 1px 1px 0px solid white;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 0.2);
+        border-radius: 0;
+    }
+
+
+    a {
+        color: #f60
+    }
+    
+    a:hover {
+        color: #f60;
+        text-decoration: underline;
+    
+    }
+
+    .navbar {
+        background-color: #4c4c4c !important;
+        color: white;
+        border-bottom: 2px solid white;
+
+    }
+
+    .navbar-toggler {
+        background-color: white !important;
+    }
+
+    .text-muted {
+        color: lightgrey !important;
+    }
+
+    .navbar-brand {
+        color: white;
+        background-color: #4c4c4c;
+    }
+    
+    .nav-link {
+        color: white;
+        
+    }
+    
+    .nav-link:hover {
+        color: #f60;
+        text-decoration: underline;
+    
+    }
+
+    .modal-content {
+        background-color: black;
+        color: white;
+        border: 1px white solid;
+    }
+
+    .company-logo {
+        background-color: white;
+    }
+}

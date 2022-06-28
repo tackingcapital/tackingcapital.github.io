@@ -1,0 +1,14 @@
+.hayek {
+
+    background-image: url("hayek.webp");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    color: white;
+
+}

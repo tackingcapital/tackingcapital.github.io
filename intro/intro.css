@@ -1,0 +1,12 @@
+.tacking {
+    background-image: url("tacking.webp");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    margin-top: 75px;
+}
