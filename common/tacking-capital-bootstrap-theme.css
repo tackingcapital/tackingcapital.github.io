@@ -270,7 +270,7 @@ blockquote {
 
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 
 html {
     color: white !important;
@@ -300,8 +300,6 @@ small {
     .table-responsive {
         background-color: #4c4c4c !important;
         color: white !important;
-        /* box-shadow: 0 1px 2px rgb(255 255 255 / 0.2);
-        border: 1px solid #4c4c4c; */
     }
 
     th {
@@ -370,4 +368,4 @@ small {
     .company-logo {
         background-color: white;
     }
-}
+} */
